@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-family: 'Martel Sans', sans-serif;
+
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600;700&display=swap');
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("./assets/images/background_img.png");
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+
+    position: relative;
+
+    /* background-color: black;
+    opacity: 0.2; */
+
+}
+
+.main .box {
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+}
+
+.nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+.nav img {
+    padding: 20px;
+    color: red;
+    width: 157px;
+    position: relative;
+    z-index: 10;
+}
+
+.nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    color: white;
+    height: calc(100%-62px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 23px;
+    padding: 100px 230px;
+}
+
+.hero span:first-child {
+    text-align: center;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.hero span:nth-child(2) {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.hero span:nth-child(3) {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+.sepration {
+    height: 6px;
+    background-color: rgb(80, 77, 77);
+}
+
+.btn {
+
+    padding: 5px 9px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: hidden;
+    background-color: rgba(23, 23, 23, .15);
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    border-style: none;
+    color: white;
+    padding: 6px 24px;
+    font-size: 20px;
+    border-radius: 5px;
+
+}
+
+.input {
+    color: white;
+    padding: 6px 28px;
+    font-size: 20px;
+    border-radius: 5px;
+    border-style: hidden;
+    /* opacity: 0.86; */
+    background-color: rgba(23, 23, 23, 0.2);
+
+}
+
+.btn-red-sm {
+    background-color: red;
+    border-style: none;
+    color: white;
+
+}
+
+.frist-section {
+    /* padding: 78px 0;
+    margin: 0px 174px; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+}
+
+@media screen and (max-width:1300px) {
+    .frist-section {
+
+        flex-wrap: wrap;
+    }
+}
+
+.frist-section>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.tv-sec {
+    position: relative;
+
+}
+
+.tv-sec img {
+    width: 37vw;
+    position: relative;
+    z-index: 10;
+}
+
+.tv-sec video {
+    position: absolute;
+    top: 89px;
+    right: 14px;
+    width: 555px;
+}
+
+.frist-section span:first-child {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.frist-section span:nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.faq h2 {
+    font-size: 34px;
+    font-weight: 600;
+    padding: 10px;
+
+    text-align: center;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center;
+    flex-direction: column; */
+    padding: 34px;
+}
+
+.faq svg {
+    filter: invert(1);
+}
+
+.faq-box:hover {
+    background-color: red;
+}
+
+.faq-box {
+    font-size: 20px;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    display: flex;
+    background-color: rgb(89, 88, 88);
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    margin: auto;
+    max-width: 60vw;
+    padding: 14px;
+}
+
+footer .questions {
+    padding: 34px 0;
+
+}
+
+.footer a {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
